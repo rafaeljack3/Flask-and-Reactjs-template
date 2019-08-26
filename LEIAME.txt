@@ -1,0 +1,19 @@
+https://itnext.io/a-template-for-creating-a-full-stack-web-application-with-flask-npm-webpack-and-reactjs-be2294b111bd
+
+
+1) Criar um ambiente virtual:
+$ python3 -m venv venv
+
+2)
+In our hello folder, we used the views to render an HTML file which will be displayed whenever 
+it sees at the end of the url / and /hello . So the normal execution process will be:
+
+    Start the application from hello_template/run.py
+    hello_template/run.py imports app fromhello_template/templates/__init__.py
+    hello_template/templates/__init__.py initializes the app and imports all the views
+    hello_template/templates/hello/views.py listen to the url / and /hello and renders an html file.
+
+
+3) Installing Webpack: Webpack can be installed through npm. Install it globally using npm install -g webpack or add it as dependency in your project with npm install — save-dev webpack.
+
+In this project, we will add webpack as dependency. So we first create a hello_template/templates/static/package.json file. To create this file, you can open a terminal in the hello_template/templates/static/ folder and run the command npm init
